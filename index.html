@@ -21,7 +21,8 @@
             <div class="header__logo">Photobrix</div>
             <ul class="menu">
               <li class="menu__item">
-                <img src="./img/basket.png" alt="cart" /><a href="#"
+                <img src="./img/basket.png" alt="cart" /><a
+                  href="/mosaic-step-1.html"
                   >Купить набор</a
                 >
               </li>
@@ -32,7 +33,7 @@
               </li>
             </ul>
 
-            <a class="menu__link">Личный кабинет</a>
+            <a href="/profile.html" class="menu__link">Личный кабинет</a>
 
             <ul class="menu--mobile">
               <li class="menu__item">
@@ -66,7 +67,8 @@
 
             <ul class="menu">
               <li class="menu__item">
-                <img src="./img/basket.png" alt="cart" /><a href="#"
+                <img src="./img/basket.png" alt="cart" /><a
+                  href="/mosaic-step-1.html"
                   >Купить набор</a
                 >
               </li>
@@ -84,7 +86,7 @@
                 </p>
               </div>
               <button class="button button--primary">
-                Загрузить фото
+                <a href="/mosaic-step-1.html">Загрузить фото</a>
                 <div class="detail detail-2"></div>
               </button>
             </div>
@@ -127,11 +129,11 @@
               </div>
             </div>
             <button class="button button--primary">
-              Загрузить фото
+              <a href="/mosaic-step-1.html">Загрузить фото</a>
               <div class="detail detail-2"></div>
             </button>
           </div>
-          <div>
+          <div class="relative">
             <div class="caption__wrapper">
               <ul class="main__caption">
                 <li><img src="./img/arrowms.svg" /> 50 х 50 см</li>
@@ -140,7 +142,7 @@
                 <li><img src="./img/child.svg" /> 14+</li>
               </ul>
             </div>
-            <!-- <div class="detail detail-5"></div> -->
+            <div class="detail detail-5"></div>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@
                     Выберите в галерее фотографию, которую вы хотите собрать
                   </span>
 
-                  <a class="button--secondary">
+                  <a href="/mosaic-step-1.html" class="button--secondary">
                     <img src="./img/ic_img.png" /> Загрузить фото</a
                   >
                 </div>
@@ -205,7 +207,7 @@
                     Собирайте картину по сгенерированной схеме
                   </span>
 
-                  <a class="button--secondary">
+                  <a href="/mosaic-step-1.html" class="button--secondary">
                     <img src="./img/basket.png" /> Купить набор</a
                   >
                 </div>
@@ -252,7 +254,8 @@
       </footer>
     </div>
   </body>
-  <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+  <script src="./js/cocoen.js"></script>
+
   <script>
     Cocoen.parse(document.body);
     Cocoen.create(document.querySelector(".cocoen"));

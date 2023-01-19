@@ -99,6 +99,11 @@ body {
 
   &__logo {
     font: 700 1.5rem/2rem var(--font-PT);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 
   &--profile {
@@ -255,7 +260,7 @@ body {
   }
 
   .content__caption {
-    font: 700 1.25rem/1.75rem var(--font-Gilroy);
+    font: 500 1.25rem/1.75rem var(--font-Gilroy);
     opacity: 0.5;
   }
 }
@@ -266,6 +271,11 @@ body {
   border-radius: 40px;
   font: 700 1.125rem/1.75rem var(--font-Gilroy);
   min-width: max-content;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
   &--primary {
     color: var(--color-01);
@@ -333,6 +343,10 @@ body {
   }
 }
 
+.relative {
+  position: relative;
+  max-height: 72px;
+}
 .content__img {
   position: relative;
   z-index: 0;
@@ -613,7 +627,7 @@ body {
 }
 
 .right-images {
-  left: 1384.76px;
+  right: 145px;
   top: 1532px;
 
   img {

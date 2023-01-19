@@ -206,6 +206,10 @@ body {
 .header__logo {
   font: 700 1.5rem/2rem var(--font-PT);
 }
+.header__logo a {
+  color: inherit;
+  text-decoration: none;
+}
 .header--profile {
   border-bottom: 1px solid #f6f6f5;
 }
@@ -357,7 +361,7 @@ body {
   margin-bottom: 24px;
 }
 .content__text .content__caption {
-  font: 700 1.25rem/1.75rem var(--font-Gilroy);
+  font: 500 1.25rem/1.75rem var(--font-Gilroy);
   opacity: 0.5;
 }
 
@@ -369,6 +373,10 @@ body {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+.button a {
+  color: inherit;
+  text-decoration: none;
 }
 .button--primary {
   color: var(--color-01);
@@ -419,6 +427,11 @@ body {
   height: 92px;
   left: 245px;
   bottom: -73px;
+}
+
+.relative {
+  position: relative;
+  max-height: 72px;
 }
 
 .content__img {
@@ -697,7 +710,7 @@ body {
 }
 
 .right-images {
-  left: 1384.76px;
+  right: 145px;
   top: 1532px;
 }
 .right-images img {
