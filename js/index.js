@@ -1,10 +1,12 @@
 window.onscroll = function () {
   let header = document.querySelector(".header");
   let headerBody = document.querySelector(".container--header");
-  if (window.pageYOffset == 0) {
+  if (window.pageYOffset <= 0) {
     header.classList.remove("fixed");
+    $(".main").css("padding-top", "0");
   } else {
     header.classList.add("fixed");
+    $(".main").css("padding-top", "72px");
   }
 };
 
