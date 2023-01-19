@@ -1393,6 +1393,45 @@ body {
 }
 
 @media (max-width: 751px) {
+  .content__text {
+    width: 100%;
+
+    .content__title {
+      font: 700 32px/40px var(--font-Gilroy);
+      margin-bottom: 16px;
+    }
+
+    .content__caption {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .header__caption--bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .steps__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .block__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  .app__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
   .profile__content {
     flex-direction: column;
     align-items: center;
@@ -1434,6 +1473,26 @@ body {
 
     &__menu {
       right: 5%;
+    }
+
+    &__header {
+      p {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      button {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
     }
   }
 }
@@ -1637,16 +1696,6 @@ body {
 
   .content__text {
     margin-bottom: 0;
-
-    .content__title {
-      font-size: 2.6667rem;
-      line-height: 3.3333rem;
-    }
-
-    .content__caption {
-      font-size: 1.333rem;
-      line-height: 2rem;
-    }
   }
 
   .content__img {
