@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Photobrix</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main">
+        <header class="header">
+          <div class="container container--header">
+            <div class="header__logo">Photobrix</div>
+            <ul class="menu">
+              <li class="menu__item">
+                <img src="./img/basket.png" alt="cart" /><a href="#"
+                  >Купить набор</a
+                >
+              </li>
+              <li class="menu__item">
+                <img src="./img/info.png" alt="info" /><a href="#"
+                  >Инструкция</a
+                >
+              </li>
+            </ul>
+
+            <a class="menu__link">Личный кабинет</a>
+
+            <ul class="menu--mobile">
+              <li class="menu__item">
+                <a href="#">
+                  <img src="./img/ic_info.svg" />
+                </a>
+              </li>
+              <li class="menu__item" id="expand">
+                <a href="#">
+                  <img src="./img/ic_menu.svg" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="menu--mobile__expand">
+          <div class="container container--header">
+            <div>
+              <div class="header__logo">Photobrix</div>
+
+              <div>
+                <a class="menu__link">
+                  <img src="./img/ic_info_white.svg" />
+                </a>
+
+                <a class="menu__link" id="close-menu">
+                  <img src="./img/ic_cross_white.svg" />
+                </a>
+              </div>
+            </div>
+
+            <ul class="menu">
+              <li class="menu__item">
+                <img src="./img/basket.png" alt="cart" /><a href="#"
+                  >Купить набор</a
+                >
+              </li>
+              <li class="menu__item"><a href="#"> Личный кабинет </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container container--main">
+          <div class="main__content">
+            <div>
+              <div class="content__text">
+                <h2 class="content__title">Лучший конструктор из ваших фото</h2>
+                <p class="content__caption">
+                  Подарите массу эмоций себе и близким
+                </p>
+              </div>
+              <button class="button button--primary">
+                Загрузить фото
+                <div class="detail detail-2"></div>
+              </button>
+            </div>
+
+            <div class="content__img">
+              <div class="detail detail-1"></div>
+              <div class="detail detail-3"></div>
+              <div class="detail detail-4"></div>
+              <div class="img__caption">
+                <span>Потяните, чтобы сравнить результат и оригинал</span>
+                <div class="arrow"></div>
+              </div>
+
+              <div class="cocoen">
+                <img src="./img/image-1.svg" />
+                <img src="./img/image-2.svg" />
+              </div>
+            </div>
+          </div>
+
+          <div class="main__content--mobile">
+            <div class="content__text">
+              <h2 class="content__title">Лучший конструктор из ваших фото</h2>
+              <p class="content__caption">
+                Подарите массу эмоций себе и близким
+              </p>
+            </div>
+            <div class="content__img">
+              <div class="detail detail-1"></div>
+              <div class="detail detail-3"></div>
+              <div class="detail detail-4"></div>
+              <div class="img__caption">
+                <span>Потяните, чтобы сравнить результат и оригинал</span>
+                <div class="arrow"></div>
+              </div>
+
+              <div class="cocoen">
+                <img src="./img/image-1.svg" />
+                <img src="./img/image-2.svg" />
+              </div>
+            </div>
+            <button class="button button--primary">
+              Загрузить фото
+              <div class="detail detail-2"></div>
+            </button>
+          </div>
+          <div>
+            <div class="caption__wrapper">
+              <ul class="main__caption">
+                <li><img src="./img/arrowms.svg" /> 50 х 50 см</li>
+                <li><img src="./img/brick.svg" /> 5600 деталей</li>
+                <li><img src="./img/clock.svg" /> 10 часов сборки</li>
+                <li><img src="./img/child.svg" /> 14+</li>
+              </ul>
+            </div>
+            <!-- <div class="detail detail-5"></div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <div class="container container--steps">
+          <div class="container__title steps__title">
+            Процесс подготовки схемы для сборки мозаики
+          </div>
+
+          <div class="steps__block-container">
+            <div class="steps__block">
+              <div class="arrow arrow--left"></div>
+
+              <div class="block__img">
+                <img src="./img/img-01.png" />
+              </div>
+
+              <div class="block__text">
+                <span class="block__number">1</span>
+                <div>
+                  <p class="block__title">Загрузите фото</p>
+                  <span class="block__caption">
+                    Выберите в галерее фотографию, которую вы хотите собрать
+                  </span>
+
+                  <a class="button--secondary">
+                    <img src="./img/ic_img.png" /> Загрузить фото</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="steps__block">
+              <div class="arrow arrow--right"></div>
+
+              <div class="block__img">
+                <img src="./img/img-02.png" />
+              </div>
+
+              <div class="block__text">
+                <span class="block__number">2</span>
+                <div>
+                  <p class="block__title">Выберите фрагмент</p>
+                  <span class="block__caption">
+                    Ограничьте рамкой фрагмент, который хотите собрать
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="steps__block">
+              <div class="block__img">
+                <img src="./img/img-03.png" />
+              </div>
+
+              <div class="block__text">
+                <span class="block__number">3</span>
+                <div>
+                  <p class="block__title">Собирайте мозайку</p>
+                  <span class="block__caption">
+                    Собирайте картину по сгенерированной схеме
+                  </span>
+
+                  <a class="button--secondary">
+                    <img src="./img/basket.png" /> Купить набор</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app">
+        <div class="container container--app">
+          <div class="app__text">
+            <p class="app__title">Приложение для генерации мозаики из фото</p>
+            <span class="app__caption">
+              Соберите свою картину или одну из имеющихся в приложении
+            </span>
+            <div class="app__buttons">
+              <a href=""></a>
+              <a href=""></a>
+            </div>
+          </div>
+
+          <div class="app__img">
+            <img src="./img/iphone.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="left-images">
+        <img src="./img/left-1.png" />
+        <img src="./img/left-2.png" />
+      </div>
+
+      <div class="right-images">
+        <img src="./img/right-1.png" />
+        <img src="./img/right-2.png" />
+      </div>
+
+      <footer class="footer footer--main">
+        <div class="container container--footer">
+          <a>Пользовательское соглашение</a>
+          <p class="copy">© Photobrix, 2023</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://unpkg.com/cocoen/dist/cocoen.js"></script>
+  <script>
+    Cocoen.parse(document.body);
+    Cocoen.create(document.querySelector(".cocoen"));
+  </script>
+  <script src="./js/index.js"></script>
+</html>

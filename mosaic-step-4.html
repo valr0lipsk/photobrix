@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Mosaic</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--mosaic">
+        <div class="container container--header">
+          <div class="header__logo">Photobrix</div>
+
+          <div class="header__controls">
+            <button class="active"><img src="./img/Union.svg" /></button>
+            <button><img src="./img/1_disabled.svg" /></button>
+            <button><img src="./img/2.svg" /></button>
+            <button><img src="./img/3.svg" /></button>
+            <button><img src="./img/4.svg" /></button>
+          </div>
+
+          <div class="menu__links flex">
+            <a id="more" class="menu__link flex">
+              <img src="./img/more.svg" />
+            </a>
+            <a class="menu__link flex"><img src="./img/ic_back.svg" /> Назад</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="container container--mosaic container--mosaic-3">
+        <div class="app__controls">
+          <div class="controls__item">
+            <img src="./img/cube.svg" />
+            84
+          </div>
+
+          <div class="controls__item">
+            <img src="./img/circle.svg" />
+            92
+          </div>
+
+          <div class="controls__item">
+            <img src="./img/angle.svg" />
+            38
+          </div>
+
+          <div class="controls__item">
+            <img src="./img/cube_d.svg" />
+            20
+          </div>
+
+          <div class="controls__item">
+            <img src="./img/circle_d.svg" />
+            54
+          </div>
+        </div>
+
+        <div class="app__controls app__controls--mobile">
+          <div class="header__controls header__controls--mobile">
+            <button class="active"><img src="./img/Union.svg" /></button>
+            <button><img src="./img/1_disabled.svg" /></button>
+            <button><img src="./img/2.svg" /></button>
+            <button><img src="./img/3.svg" /></button>
+            <button><img src="./img/4.svg" /></button>
+          </div>
+          <div>
+            <div class="controls__item">
+              <img src="./img/cube.svg" />
+              84
+            </div>
+
+            <div class="controls__item">
+              <img src="./img/circle.svg" />
+              92
+            </div>
+
+            <div class="controls__item">
+              <img src="./img/angle.svg" />
+              38
+            </div>
+
+            <div class="controls__item">
+              <img src="./img/cube_d.svg" />
+              20
+            </div>
+
+            <div class="controls__item">
+              <img src="./img/circle_d.svg" />
+              54
+            </div>
+          </div>
+        </div>
+        <div class="mosaic__app">
+          <img src="./img/frame.svg" />
+        </div>
+
+        <div class="popup__menu" id="popup-menu">
+          <ul>
+            <li>
+              <img src="./img/ic_clean.svg" />
+              Очистить схему
+            </li>
+            <li>
+              <img src="./img/ic_print.svg" />
+              Отправить в печать
+            </li>
+            <li>
+              <img src="./img/ic_pdf.svg" />
+              Сохранить в PDF
+            </li>
+            <li>
+              <img src="./img/ic_share.svg" />
+              Поделиться
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

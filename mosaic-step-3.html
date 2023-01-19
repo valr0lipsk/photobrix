@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Mosaic</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--mosaic">
+        <div class="container container--header">
+          <div class="header__logo">Photobrix</div>
+
+          <div class="header__caption">
+            <img src="./img/ic_info.svg" />
+            Чтобы открыть доступ к инструкции введите код
+          </div>
+
+          <a class="menu__link flex"><img src="./img/ic_back.svg" /> Назад</a>
+        </div>
+      </header>
+
+      <div class="mosaic">
+        <div class="container container--mosaic">
+          <div class="mosaic__photo mosaic__photo--step3">
+            <img src="./img/mosaic-3.svg" />
+          </div>
+
+          <button class="button button--primary" id="code">Ввести код</button>
+        </div>
+      </div>
+
+      <div class="coverage" id="popup-code">
+        <div class="popup popup--mosaic">
+          <div class="popup__container">
+            <div class="popup__header">
+              <p>Ваш код</p>
+              <button id="close-code"><img src="./img/ic_cross.svg" /></button>
+            </div>
+
+            <div class="popup__form">
+              <form id="code">
+                <div class="form__block">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Введите"
+                  />
+                </div>
+                <div class="form__block form__block--text">
+                  <p>Код находится на обратной стороне крышки в упаковке</p>
+                  <p>
+                    Ещё нет мозаики?
+                    <a href="#">
+                      Заказать
+                      <img src="./img/ic_arrow.svg" />
+                    </a>
+                  </p>
+                </div>
+              </form>
+
+              <button class="button button--primary" type="submit" form="code">
+                Отправить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

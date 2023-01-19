@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Photobrix</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--profile">
+        <div class="container container--header">
+          <div class="header__logo">Photobrix</div>
+
+          <ul class="menu">
+            <li class="menu__item">
+              <img src="./img/basket.png" alt="cart" /><a href="#"
+                >Купить набор</a
+              >
+            </li>
+            <li class="menu__item">
+              <img src="./img/info.png" alt="info" /><a href="#">Инструкция</a>
+            </li>
+          </ul>
+
+          <a class="menu__link menu__link--active">Личный кабинет</a>
+
+          <ul class="menu--mobile">
+            <li class="menu__item">
+              <a href="#">
+                <img src="./img/ic_info.svg" />
+              </a>
+            </li>
+            <li class="menu__item" id="expand">
+              <a href="#">
+                <img src="./img/ic_menu.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="menu--mobile__expand">
+        <div class="container container--header">
+          <div>
+            <div class="header__logo">Photobrix</div>
+
+            <div>
+              <a class="menu__link">
+                <img src="./img/ic_info_white.svg" />
+              </a>
+
+              <a class="menu__link" id="close-menu">
+                <img src="./img/ic_cross_white.svg" />
+              </a>
+            </div>
+          </div>
+
+          <ul class="menu">
+            <li class="menu__item">
+              <img src="./img/basket.png" alt="cart" /><a href="#"
+                >Купить набор</a
+              >
+            </li>
+            <li class="menu__item"><a href="#"> Личный кабинет </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="container container--profile">
+          <div class="profile__header">
+            <div class="container__title profile__title">Мои мозаики</div>
+            <button class="profile__button" id="settings">
+              <img src="./img/ic_settings.svg" />
+              <p>Настройки</p>
+            </button>
+          </div>
+
+          <div class="profile__content">
+            <div class="profile__block profile__block--new">
+              <div class="block__text">
+                <p class="block__title">Создайте схему</p>
+                <p class="block__caption">
+                  Загрузите фото, <br />
+                  чтобы сгенерировать <br />
+                  новую схему для сборки
+                </p>
+              </div>
+
+              <button class="button button--primary">Загрузить фото</button>
+            </div>
+
+            <div class="profile__block profile__block--main">
+              <img src="./img/profile_img.png" />
+              <button class="button--rounded">
+                <img src="./img/ic_delete.svg" />
+              </button>
+            </div>
+
+            <div
+              class="profile__block profile__block--main profile__block--deleted"
+            >
+              <img src="./img/placeholder-2.png" />
+              <div class="block__cover">
+                <span> Мозаика удалена </span>
+                <button class="button button--secondary">Восстановить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coverage" id="popup-settings">
+        <div class="popup popup--profile">
+          <div class="popup__container">
+            <div class="popup__header">
+              <p>Настройки</p>
+              <button id="close-popup"><img src="./img/ic_cross.svg" /></button>
+            </div>
+
+            <div class="popup__form">
+              <form id="settings">
+                <div class="form__block form__block--code">
+                  <input
+                    type="text"
+                    class="form__input form__input--code"
+                    placeholder="Ваш код"
+                  />
+                  <img src="./img/edit.svg" />
+                </div>
+
+                <div class="form__block form__block--text">
+                  <p>Код находится на обратной стороне крышки в упаковке</p>
+                  <p>
+                    Ещё нет мозаики?
+                    <a href="#">
+                      Заказать
+                      <img src="./img/ic_arrow.svg" />
+                    </a>
+                  </p>
+                </div>
+
+                <div class="form__block">
+                  <label for="birth">Дата рождения</label>
+                  <input
+                    type="text"
+                    id="birth"
+                    class="form__input"
+                    placeholder="Дата рождения"
+                  />
+                </div>
+
+                <div class="form__block">
+                  <label for="email">Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form__input"
+                    placeholder="Введите email"
+                  />
+                </div>
+              </form>
+              <button
+                class="button button--primary"
+                type="submit"
+                form="settings"
+              >
+                Сохранить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container container--footer">
+          <a>Пользовательское соглашение</a>
+          <p class="copy">© Photobrix, 2023</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
